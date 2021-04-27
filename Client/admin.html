@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    <main>
+        <label>Quote:</label>
+        <input type="text" id="quote-input">
+        <button id="add-quote-btn">Add Quote</button>
+
+        <br><br><br>
+        <div>
+            <input placeholder="search by quote" id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Quote</th>
+                <th>Date Added</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Quote:</label>
+            <input type="text" id="update-quote-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
